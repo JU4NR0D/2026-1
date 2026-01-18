@@ -46,7 +46,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
 
     * Se valorará positivamente que los estudiantes vayan más allá de lo solicitado en la guía, incorporando mejoras, optimizaciones, características adicionales y/o realizando un análisis más profundo del diseño propuesto.
 
-5. Normas Generales del Laboratorio
+5. **Normas Generales del Laboratorio**
 
     * Asistencia obligatoria a todas las sesiones.
 
