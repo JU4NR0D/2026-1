@@ -73,7 +73,8 @@
 4. Descargue el paquete ***Digital*** desde GitHub:
 
     ```
-    wget -O digital.zip https://github.com/hneemann/Digital/releases/latest/download/Digit
+    wget -O digital.zip https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
+
     ```
 
 5. Descomprima el archivo y ejecute el *script* de instalación incluido en ***Digital***:
