@@ -20,7 +20,7 @@ El laboratorio de Electrónica Digital I tiene como objetivo principal complemen
 El laboratorio se desarrolla bajo el siguiente esquema:
 
 1. **Preparación previa**  
-   Lectura de la guía y configuración del entorno.
+   Lectura de la guía, configuración del entorno, simulacion y escritura del preinforme con diseño y calculo
 
 2. **Trabajo en laboratorio**  
    Implementación práctica en grupos, validación de resultados y análisis.
@@ -31,16 +31,21 @@ El laboratorio se desarrolla bajo el siguiente esquema:
 4. **Evaluación y retroalimentación**
 
     **Criterios de evaluación:**
+    * **Criterios Habilitantes**
+
+      * Asistencia al laboratorio
+      * entrega del preinforme
+      * commits realizados y justificados
 
     * **Etapas del desarrollo del sistema:** Se evaluará que los estudiantes sigan las etapas del flujo de diseño digital, incluyendo:
 
-      * Etapa de diseño del sistema.
+      * Etapa de diseño del sistema (preinforme).
 
-      * Etapa de descripción en HDL.
+      * Etapa de descripción en HDL (preinforme).
 
-      * Etapa de simulación.
+      * Etapa de simulación (preinforme).
 
-      * Etapa de implementación.
+      * Etapa de implementación (informe).
 
     * **Documentación en GitHub Classroom:** Claridad, precisión, organización, cumplimiento de los plazos establecidos y adherencia a los lineamientos de entrega planteados en la plantilla, completando cada una de las secciones definidas en esta.
 
@@ -48,7 +53,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
 
 5. **Normas Generales del Laboratorio**
 
-    * Asistencia obligatoria a todas las sesiones.
+    * Asistencia obligatoria a todas las sesiones, si no se asiste a la sesion de laboratorio se pierde la nota de la sesion.
 
     * Puntualidad y respeto por los tiempos asignados.
 
@@ -67,41 +72,72 @@ El laboratorio se desarrolla bajo el siguiente esquema:
     <th>Guía</th>
     <th>Entrega (GitHub Classroom)</th>
     <th>Deadline</th>
+    <th>Porcentaje</th>
   </tr>
+
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th>Grupos del SIA 5 & 6</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td>1-2</td>
+    <td>1</td>
     <td>Instalación de herramientas</td>
     <td><a href="/labs/lab00/README.md">lab00</a></td>
     <td>-</td>
     <td>-</td>
+    <td>5%</td>
   </tr>
   <tr>
-    <td>3-4</td>
+    <td>2-3</td>
     <td>Comparación de tecnologías CMOS vs TTL</td>
     <td><a href="/labs/lab01/README.md">lab01</a></td>
     <td><a href="https://classroom.github.com/a/dxepkfnI">Link</a></td>
-    <td> 20 sep</td>
+    <td> 22 feb</td>
+    <td>5%</td>
   </tr>
   <tr>
-    <td>4-5</td>
+    <td>3-4</td>
     <td>Sumador de 1 y 4 bits y sumador/restador</td>
     <td><a href="/labs/lab02/README.md">lab02</a></td>
     <td><a href="https://classroom.github.com/a/Xq4lF-ov">Link</a></td>
-    <td> 21 Oct</td>
+    <td> 1 Mar</td>
+    <td>10%</td>
   </tr>
   <tr>
-    <td>6-7</td>
+    <td>4-6 </td>
     <td>Decodificador BCD a 7 segmentos</td>
     <td><a href="/labs/lab03/README.md">lab03</a></td>
     <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
-    <td> 28 Oct</td>
+    <td> 8 Mar</td>
+    <td>10%</td>
+  </tr>
+  <tr>
+    <td>6-8</td>
+    <td>Bonos</td>
+    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
+    <td>22 Mar</td>
+    <td>10%</td>
+  </tr>
+  <tr>
+    <td>8-9</td>
+    <td>Contadores</td>
+    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
+    <td>12 Abr</td>
+    <td>10%</td>
+  </tr>
+  <tr>
+    <td>8-9</td>
+    <td>Registros de desplazamiento</td>
+    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
+    <td>26 Abr</td>
+    <td>10%</td>
+  </tr> 
+  <tr>
+    <td>8-9</td>
+    <td>Maquinas de estado</td>
+    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
+    <td>10 May</td>
+    <td>10%</td>
   </tr>
   <tr>
     <td>8-9</td>
@@ -109,13 +145,15 @@ El laboratorio se desarrolla bajo el siguiente esquema:
     <td><a href="/labs/lab04/README.md">lab04</a></td>
     <td><a href="https://classroom.github.com/a/xnzeM2hf">Link</a></td>
     <td> 13 Nov</td>
+    <td>10%</td>
   </tr>
   <tr>
     <td>10</td>
     <td> Proyecto final</td>
     <td><a>Proyecto</a></td>
     <td><a href="https://classroom.github.com/a/7gF4-Dcv">Link</a></td>
-    <td> </td>
+    <td> 24 may</td>
+    <td>30%</td>
   </tr>
   </table>
  
