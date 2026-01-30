@@ -78,7 +78,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>1</td>
     <td>Instalación de herramientas</td>
-    <td><a href="/labs/lab00/README.md">lab00</a></td>
+    <td><a href="/Labs/Lab_0/README.md">Lab_0</a></td>
     <td>-</td>
     <td>-</td>
     <td>5%</td>
@@ -86,7 +86,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>2-3</td>
     <td>Comparación de tecnologías CMOS vs TTL</td>
-    <td><a href="/labs/lab01/README.md">lab01</a></td>
+    <td><a href="/Labs/Lab_1/README.md">Lab_1</a></td>
     <td><a href="https://classroom.github.com/a/dxepkfnI">Link</a></td>
     <td> 22 feb</td>
     <td>5%</td>
@@ -94,7 +94,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>3-4</td>
     <td>Sumador de 1 y 4 bits y sumador/restador</td>
-    <td><a href="/labs/lab02/README.md">lab02</a></td>
+    <td><a href="/Labs/Lab_2/README.md">Lab_2</a></td>
     <td><a href="https://classroom.github.com/a/Xq4lF-ov">Link</a></td>
     <td> 1 Mar</td>
     <td>10%</td>
@@ -102,7 +102,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>4-6 </td>
     <td>Decodificador BCD a 7 segmentos</td>
-    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="/Labs/Lab_3/README.md">Lab_3</a></td>
     <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
     <td> 8 Mar</td>
     <td>10%</td>
@@ -110,7 +110,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>6-8</td>
     <td>Bonos</td>
-    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="/Labs/Lab_3/README.md">Lab_3</a></td>
     <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
     <td>22 Mar</td>
     <td>10%</td>
@@ -118,7 +118,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>8-9</td>
     <td>Contadores</td>
-    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="/Labs/Lab_3/README.md">Lab_3</a></td>
     <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
     <td>12 Abr</td>
     <td>10%</td>
@@ -126,7 +126,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>8-9</td>
     <td>Registros de desplazamiento</td>
-    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="/Labs/Lab_3/README.md">Lab_3</a></td>
     <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
     <td>26 Abr</td>
     <td>10%</td>
@@ -134,7 +134,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>8-9</td>
     <td>Maquinas de estado</td>
-    <td><a href="/labs/lab03/README.md">lab03</a></td>
+    <td><a href="/Labs/Lab_3/README.md">Lab_3</a></td>
     <td><a href="https://classroom.github.com/a/NsOl3Baa">Link</a></td>
     <td>10 May</td>
     <td>10%</td>
@@ -142,7 +142,7 @@ El laboratorio se desarrolla bajo el siguiente esquema:
   <tr>
     <td>8-9</td>
     <td>LCD 16x2 en modo paralelo</td>
-    <td><a href="/labs/lab04/README.md">lab04</a></td>
+    <td><a href="/Labs/Lab_4/README.md">Lab_4</a></td>
     <td><a href="https://classroom.github.com/a/xnzeM2hf">Link</a></td>
     <td> 13 Nov</td>
     <td>10%</td>

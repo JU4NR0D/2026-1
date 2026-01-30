@@ -73,9 +73,8 @@ Antes de realizar la actividad en laboratorio, se deberá llevar a cabo una simu
    * Estudiar el oscilador en anillo basado en la compuerta NOT.
 
    <div align="center">
-   <img src="/labs/figs/lab01/osc.png" alt="ring-osc" style="width: 600px; height: auto;">
+      <img src="/Labs/figs/lab01/osc.png" alt="ring-osc" style="width: 600px; height: auto;">
    </div>
-
 
    * Simular el comportamiento de los osciladores en anillo utilizando compuertas NOT CMOS, solicitados en la [parte 3](#parte-3).
 
