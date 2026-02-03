@@ -46,63 +46,14 @@
 
 ## Instalación
 
-
-1. Verifique si tiene instalado Java.
-
-    ***Digital*** depende de Java, por lo que primero se debe instalar una versión compatible. 
-
-    ```
-    java -version
-    ```
-
-    En caso de que ya cuente con una versión LTS de Java, continue con el paso **4**.
-
-2. Instale la versión LTS, para el momento de realización del presente tutorial es Java 11
-
-    ```
-    sudo apt install openjdk-11-jdk -y
-    ```
-
-3.  Verifique la instalación:
-
-    ```
-    java -version
-    ```
-
-
-4. Descargue el paquete ***Digital*** desde GitHub:
-
-    ```
-    wget -O digital.zip https://github.com/hneemann/Digital/releases/latest/download/Digital.zip
-
-    ```
-
-5. Descomprima el archivo y ejecute el *script* de instalación incluido en ***Digital***:
-
-    ```
-    unzip digital.zip
-    cd Digital
-    ./install.sh
-    ```
-
-6. Cree un enlace simbólico en ```/usr/local/bin``` para ejecutar ***Digital*** fácilmente desde cualquier directorio:
-
-    ```
-    sudo ln -sr ./Digital.sh $LBIN/Digital.sh
-    ```
-
-7. Finalmente ejectute ***Digital***:
-
-    *  Desde la terminal:
-
-        Gracias al enlace simbólico creado en ```/usr/local/bin```, se puede simplemente escribir el siguiente comando en la terminal para ejecutar ***Digital***:
-
-        ```
-        Digital.sh
-        ```
-
-    * Algunos entornos de escritorio, como GNOME o KDE, escanean los directorios como ```/usr/local/bin``` o ```/usr/bin``` para detectar aplicaciones que puedan estar disponibles en el sistema. Dado que, gracias al paso **6**,  ```Digital.sh``` se encuentra en uno de estos directorios, el entorno gráfico puede generar automáticamente un acceso directo en el menú de aplicaciones, en otras palabras, se puede encontrar ***Digital*** en el menú de aplicaciones del SO.
-
+1.  primero entramos a la pagina oficial de Java: [Link](https://www.java.com/es/download/manual.jsp)
+![pagina_web](/Labs/figs/lab00/pagina_java.png)
+2. abrimos el instalador y procedemos a instalarlo:
+![pagina_web](/Labs/figs/lab00/java_windows.png)
+3. vamos a link del repositorio de github y oprimos Download: [link](https://github.com/hneemann/Digital)
+![github](/Labs/figs/lab00/herramienta_digital.png)
+4. extraemos el winrar, abrimos la carpeta resultante y entramos a la aplicacion:
+![app_digital](/Labs/figs/lab00/app_digital.png)
 ## Documentación
 
 1. El repositorio de ***Digital*** es un proyecto *open source* que se encuentra en [GitHub *Digital*](https://github.com/hneemann/Digital?tab=readme-ov-file).
