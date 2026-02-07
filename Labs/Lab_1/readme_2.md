@@ -102,12 +102,12 @@ El estudiante deberá llegar al laboratorio con:
 
 
   <div>
-    <img src="/Labs/figs/lab01/puerta-or.webp" width="300">
+    <img src="/Labs/figs/lab01/puerta-or.webp" width="600" height="200">
     <p align="center">Figura 1. Compuerta OR</p>
   </div>
 
   <div>
-    <img src="/Labs/figs/lab01/pulsadores_and.png" width="300">
+    <img src="/Labs/figs/lab01/pulsadores_and.png" width="600" height="200">
     <p align="center">Figura 2. Compuerta AND</p>
   </div>
 
