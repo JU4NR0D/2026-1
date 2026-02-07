@@ -95,7 +95,7 @@ Con el fin de aprovechar adecuadamente las **dos (2) horas del laboratorio**, **
 
 El estudiante deberá llegar al laboratorio con:
 
-- Circuito de prueba de la **compuerta NOT TTL** listo para mediciones.(Practica 1)
+- Circuito de prueba de la **compuerta NOT TTL** listo para mediciones de carateristicas fisicas.(Practica 1)
 - Circuitos **AND y OR** implementados con:
   - Pulsadores como entradas lógicas (Practica 1)
   - Relés de 5 V como elementos de conmutación (Practica 1)
@@ -113,8 +113,8 @@ El estudiante deberá llegar al laboratorio con:
 
 
 
-- Montajes con compuertas **AND y OR TTL** completamente funcionales. (Practica 1)
-- Circuito equivalente para la compuerta NOT CMOS preparado.(Practica 2)
+- Montajes con compuertas **AND y OR TTL** completamente funcionales para verificacion de tablas de verdad. (Practica 1)
+- Circuito equivalente para la compuerta NOT CMOS preparado para mediciones de caracteristicas fisicas .(Practica 2)
 
 Durante la sesión **no se destinará tiempo al armado desde cero** de los circuitos, sino exclusivamente a la **verificación, medición y análisis**.
 
