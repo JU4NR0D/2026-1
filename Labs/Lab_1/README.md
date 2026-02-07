@@ -1,131 +1,210 @@
-# Comparación entre tecnología CMOS y TTL
+# Laboratorio: Comparación entre tecnología TTL y CMOS
+
+## Descripción general
+
+En este laboratorio se estudiará el comportamiento **lógico y físico real** de compuertas digitales pertenecientes a las familias **TTL** y **CMOS**. A diferencia de un enfoque puramente ideal, esta práctica busca que el estudiante comprenda que las compuertas lógicas son **dispositivos físicos**, limitados por parámetros eléctricos como corriente, potencia, velocidad y capacidad de carga.
+
+El laboratorio se divide en **dos partes claramente diferenciadas**:
+
+- **Parte 1:** Análisis físico y verificación lógica en tecnología **TTL**
+- **Parte 2:** Comparación física con tecnología **CMOS**
+
+La sesión de laboratorio tiene una duración total de **dos (2) horas**, por lo que **todos los montajes deberán estar previamente construidos**.
+
+---
 
 ## Contenido
 
-1. [Introducción](#1-introducción)
-2. [Objetivos](#2-objetivos)
-3. [Trabajo previo](#3-trabajo-previo)
-4. [Recursos requeridos](#4-recursos-requeridos)
-5. [Procedimiento](#5-procedimiento)
-6. [Entregables](#6-entregables)
-7. [Referencias](#7-referencias)
-8. [Material de apoyo](#8-material-de-apoyo)
+1. [Introducción](#introducción)  
+2. [Objetivos](#objetivos)  
+3. [Estructura del laboratorio](#estructura-del-laboratorio)  
+4. [Trabajo previo obligatorio](#trabajo-previo-obligatorio)  
+5. [Recursos requeridos](#recursos-requeridos)  
+6. [Procedimiento experimental](#procedimiento-experimental)  
+7. [Entregables](#entregables)  
+8. [Referencias](#referencias)  
+9. [Material de apoyo](#material-de-apoyo)
+
+---
+
+## Introducción
+
+Las familias lógicas TTL (Transistor-Transistor Logic) y CMOS (Complementary Metal-Oxide Semiconductor) representan dos enfoques tecnológicos distintos para la implementación de circuitos digitales. Mientras que TTL se basa en transistores bipolares, ofreciendo buena velocidad y robustez, CMOS emplea transistores MOS complementarios, caracterizándose por su bajo consumo de potencia y alta impedancia de entrada.
+
+En esta práctica se analizarán estas tecnologías desde dos niveles:
+
+- **Nivel lógico:** verificación experimental de tablas de verdad.
+- **Nivel físico:** mediciones reales de respuesta en frecuencia, fan-out, tiempos de conmutación y consumo de potencia.
+
+El objetivo es que el estudiante relacione el comportamiento ideal aprendido en teoría con las limitaciones físicas reales de los dispositivos.
+
+---
+
+## Objetivos
+
+- Analizar experimentalmente el comportamiento físico de compuertas TTL.
+- Verificar tablas de verdad de compuertas AND y OR mediante implementación física.
+- Evaluar parámetros reales de la compuerta NOT: respuesta en frecuencia, fan-out y consumo de potencia.
+- Comparar el comportamiento físico de tecnologías TTL y CMOS.
+- Comprender el impacto de la tecnología en el diseño de sistemas digitales reales.
+
+---
+
+## Estructura del laboratorio
+
+El laboratorio se divide en **dos partes**, desarrolladas dentro de 2 sesiónes de **dos (2) horas**:
+
+### Parte 1 – Tecnología TTL
+- Análisis físico de la compuerta NOT TTL.
+- Implementación lógica de compuertas AND y OR.
+- Verificación experimental de tablas de verdad.
+- Discusión de limitaciones físicas.
+
+### Parte 2 – Tecnología CMOS
+- Repetición del análisis físico usando compuertas CMOS.
+- Comparación directa con resultados obtenidos en TTL.
+- Discusión de ventajas y desventajas tecnológicas.
+
+---
+
+## Trabajo previo obligatorio
 
 
-## 1. Introducción
-En el diseño de sistemas digitales, es fundamental comprender las características eléctricas de las distintas familias lógicas, ya que estas determinan el rendimiento, consumo de energía, compatibilidad y robustez del circuito. Dos de las familias más utilizadas son TTL (Transistor-Transistor Logic) y CMOS (Complementary Metal-Oxide Semiconductor), cada una con ventajas y limitaciones particulares **[1]**.
 
-Las compuertas TTL, basadas en transistores bipolares, ofrecen alta velocidad de conmutación y una arquitectura robusta, pero presentan un consumo estático considerable y son susceptibles a picos de corriente en las transiciones. Durante la conmutación, los transistores bipolares atraviesan regiones de operación que provocan ráfagas momentáneas de corriente desde la fuente de alimentación, lo cual puede introducir ruido en el sistema si no se aplican técnicas de desacoplo apropiadas (como el uso de capacitores de bypass) **[1]**.
+### 1. Análisis teórico y simulación
 
-Por su parte, las compuertas CMOS, construidas con transistores MOS complementarios, presentan un consumo estático prácticamente nulo y una alta inmunidad al ruido, lo que las hace ideales para dispositivos portátiles o entornos industriales. Aunque también experimentan picos de corriente breves durante la conmutación, su magnitud es mucho menor que en TTL, gracias a la alta impedancia de entrada y la baja corriente de operación típica de los transistores MOS. Aun así, el uso de capacitores de desacoplo sigue siendo recomendable para evitar fluctuaciones en la alimentación durante transiciones rápidas **[1]**.
+Antes del laboratorio, el estudiante deberá:
 
-En esta práctica se realizará un análisis comparativo entre dispositivos TTL y CMOS mediante la implementación de una operación lógica elemental. Se evaluarán sus características eléctricas, tiempos de respuesta, curvas de transferencia y comportamiento dinámico, tanto mediante simulación como a través de mediciones experimentales, con el objetivo de comprender las implicaciones prácticas de cada tecnología en el diseño digital
+- Consultar las hojas de datos de:
+  - 74LS04 (TTL)
+  - CD4069 (CMOS)
+- Comparar parámetros eléctricos y realizar una tabla con los parametros:
+  - $V_{IH}$, $V_{IL}$, $V_{OH}$, $V_{OL}$
+  - Corrientes de entrada y salida
+  - Retardo de propagación 
+- Calculos de potencia de la salida estatica de una compuerta not ante una señal cuadrada con un Tiempo en alto $T_{on}$ y un tiempo en bajo $T_{off}$ y voltajes $V_{OH}$ y $V_{OL}$. 
+- Calculos de potencia de la salida dinamica de una compuerta not ante una señal cuadrada con un Tiempo de subida $T_{off\_ on}$ y un tiempo en bajada $T_{on\_ off}$ y voltajes $V_{OH}$ y $V_{OL}$. 
+- Simular en SPICE:
+  - Función de transferencia $V_{out}$ vs $V_{in}$
+  - Respuesta ante señales de distinta frecuencia (recomendacion 5 frecuencias entre 1 khz y 1 Mhz)
+  - Consumo de potencia aproximado
 
+### 2. Preparación previa de los montajes
 
-## 2. Objetivos
+Con el fin de aprovechar adecuadamente las **dos (2) horas del laboratorio**, **todos los circuitos deberán estar previamente armados**.
 
-* Comparar el comportamiento eléctrico de compuertas lógicas fabricadas en tecnologías TTL y CMOS.
+El estudiante deberá llegar al laboratorio con:
 
-* Evaluar la respuesta temporal, disipación de potencia y niveles lógicos de dispositivos digitales.
-
-
-## 3. Trabajo previo
-
-Antes de realizar la actividad en laboratorio, se deberá llevar a cabo una simulación preliminar utilizando modelos SPICE de los dispositivos a analizar. Este trabajo incluye:
-
-1. **Comparación de especificaciones técnicas**:
-
-   *  Obtener y analizar las hojas de datos (datasheets) de los dispositivos 74LS04 (TTL) y CD4069 (CMOS). Comparar los parámetros clave de cada tecnología como $V_{IH}​$, $V_{IL}​$, $V_{OH}$, $V_{OL}$, tiempos de subida, bajada, y retardo de propagación, entre otros.
-
-2. **Circuito equivalente**:
-
-   * Determinar y dibujar el circuito equivalente para cada uno de los dispositivos basándose en lo visto en la clase magistral.
-
-3. **Importación y configuración de modelos SPICE**:
-
-   * Importar y configurar correctamente los modelos SPICE del 74LS04 (TTL) y el CD4069 (CMOS) en el simulador. Se recomienda revisar la sección [Material de apoyo](#8-material-de-apoyo).
+- Circuito de prueba de la **compuerta NOT TTL** listo para mediciones de carateristicas fisicas.(Practica 1)
+- Circuitos **AND y OR** implementados con:
+  - Pulsadores como entradas lógicas (Practica 1)
+  - Relés de 5 V como elementos de conmutación (Practica 1)
 
 
-4. **Simulación de comportamiento ante señales de entrada**:
+  <div>
+    <img src="/Labs/figs/lab01/puerta-or.webp" width="600" height="200">
+    <p align="center">Figura 1. Compuerta OR</p>
+  </div>
 
-   * Realizar la simulación de cada compuerta lógica ante señales de entrada de diferentes frecuencias (desde 100 Hz hasta 1 MHz).
-
-   * Observar cómo la frecuencia de entrada afecta la respuesta temporal y la disipación de potencia.
-
-5. **Función de transferencia $V_{in}$ vs $V_{out}$​**:
-
-   * Obtener la función de transferencia para cada compuerta (TTL y CMOS).
-
-   * A partir de esta curva, determinar $V_{IH}​$, $V_{IL}​$, $V_{OH}$, $V_{OL}$.
-
-6. **Estimación de tiempos de conmutación**:
-
-   * Obtenier tiempos de subida ($t_r$), bajada ($t_f$) y retardo ($t_{PLH}$, $t_{PHL}$ y $t_{P}$) para cada tecnología.
-
-7. **Estimación del consumo de potencia**:
-
-   * Estimar teóricamente y en simulación la potencia estática y la potencia dinámica de cada dispositivo durante la operación.
-
-   * Analizar cómo varía el consumo de potencia en función de la frecuencia de operación y el tipo de tecnología (TTL vs CMOS), considerando las características de cada tecnología.
-
-8. **Simulación de oscilador en anillo**:
-
-   * Estudiar el oscilador en anillo basado en la compuerta NOT.
-
-   <div align="center">
-      <img src="/Labs/figs/lab01/osc.png" alt="ring-osc" style="width: 600px; height: auto;">
-   </div>
-
-   * Simular el comportamiento de los osciladores en anillo utilizando compuertas NOT CMOS, solicitados en la [parte 3](#parte-3).
-
-9. Realizar la investigación teórica que se considere relevante según los aspectos solicitados en la práctica, como las características eléctricas, niveles lógicos, tiempos de conmutación y consumo de potencia de las tecnologías TTL y CMOS
-
-Este trabajo servirá como base de comparación para los resultados obtenidos en el laboratorio.
-
-## 4. Recursos requeridos
-
-* Compuerta NOT TTL: 74LS04
-* Compuerta NOT CMOS: CD4069
-* Simulador de circuitos (LTSpice u otro compatible con modelos SPICE)
-* Modelos SPICE de los dispositivos
-* Hojas de datos (datasheets) de los dispositivos
-* Fuente de alimentación 
-* Generador de funciones y osciloscopio con puerto USB
-* USB
-
-## 5. Procedimiento
-
-### Parte 1
-
-1. Aplicar una señal triangular de 1 kHz de tensión adecuada para obtener la función de transferencia $V_{out}$ vs $V_{in}$ y a partir de la función de transferencia determinar experimentalmente los parámetros  $V_{IH}$, $V_{IL}$, $V_{OH}$, $V_{OL}$.
-2. Medir experimentalmente el tiempo de subida ($t_r$), tiempo de bajada ($t_f$), tiempo de retardo ($t_{PHL}$ y $t_{PLH}$) para cada dispositivo.
-
-### Parte 2
-
-1. Determinar el fan-in y fan-out de cada uno de los dispositivos.
-
-2. Determinar el consumo de potencia de cada dispositivo.
-
-3. Proponer e implementar un circuito de entrada y de salida para cada uno de los dispositivos teniendo en cuenta los parámetros de cada tecnología para observar el comportamiento del mismo.
-
-### Parte 3
-
-1. Implementar dos configuraciones diferentes de osciladores en anillo utilizando compuertas CMOS. Observar y registrar la frecuencia de oscilación generada por cada configuración.
-
-2. Comparar el desempeño de las dos configuraciones de osciladores en anillo, analizando las diferencias en la forma de onda generada, estabilidad y frecuencia de oscilación.
+  <div>
+    <img src="/Labs/figs/lab01/pulsadores_and.jpg" width="600" height="300">
+    <p align="center">Figura 2. Compuerta AND</p>
+  </div>
 
 
-## 6. Entregables
 
-Se requiere la entrega de un informe donde responda cada uno de los apartados teniendo en cuenta simulaciones, especificaciones técnicas de las compuertas utilizadas en esta práctica, mediciones obtenidas en el laboratorio de manera sustentada.
+- Montajes con compuertas **AND y OR TTL** completamente funcionales para verificacion de tablas de verdad. (Practica 1)
+- Circuito equivalente para la compuerta NOT CMOS preparado para mediciones de caracteristicas fisicas .(Practica 2)
 
-## 7. Referencias
+Durante la sesión **no se destinará tiempo al armado desde cero** de los circuitos, sino exclusivamente a la **verificación, medición y análisis**.
 
-**[1]** Cornell University. (2010). EE 2301 Experiment 3: TTL and CMOS Logic [PDF]. Disponible en: http://www.lns.cornell.edu/~ib38/teaching/p360/lectures/wk09/l26/EE2301Exp3F10.pdf
+---
 
+## Recursos requeridos
 
-## 8. Material de apoyo
+### Dispositivos
+- 74LS04 (NOT TTL)
+- 74LS08 (AND TTL)
+- 74LS32 (OR TTL)
+- CD4069 (NOT CMOS)
 
-* [Modelos spice del 74LS04 y CD4069](./spice/).
+### Implementación
+-  2 Pulsadores
+- 2 Relés de 5 V
+- Resistencias de 1 ohm
+- potenciometro de 100 ohms
+- LEDs indicadores
+
+### Instrumentación
+- Fuente de alimentación de 5 V
+- Generador de funciones
+- Osciloscopio
+- Multímetro
+
+### Software
+- LTSpice u otro simulador compatible
+- Modelos SPICE de los dispositivos
+
+---
+
+## Procedimiento experimental
+
+> **Nota importante:**  
+> Dado que la sesión de laboratorio tiene una duración de **dos (2) horas**, se asume que todos los circuitos han sido previamente armados. El tiempo en laboratorio se dedicará exclusivamente a la **verificación funcional, mediciones experimentales y análisis de resultados**.
+
+---
+
+### Parte 1 – Análisis físico y lógico en TTL
+
+1. Medir la función de transferencia $V_{out}$ vs $V_{in}$ de la compuerta NOT TTL.
+2. Determinar experimentalmente:
+   - $V_{IH}$, $V_{IL}$, $V_{OH}$, $V_{OL}$
+3. Medir tiempos de subida, bajada y retardo de propagación.
+4. Evaluar la respuesta en frecuencia de la compuerta.
+5. Determinar el **fan-out máximo** permitido.
+6. Medir el consumo de potencia estática y dinámica.
+7. Verificar las tablas de verdad de las compuertas AND y OR:
+   - Implementación con pulsadores y relés
+   - Implementación con integrados TTL
+8. Comparar comportamiento ideal vs comportamiento real.
+
+---
+
+### Parte 2 – Comparación física con tecnología CMOS
+
+1. Repetir las mediciones realizadas en la Parte 1 usando la compuerta NOT CMOS.
+2. Comparar:
+   - Respuesta en frecuencia
+   - Fan-out
+   - Consumo de potencia
+   - Tiempos de conmutación
+3. Analizar las diferencias observadas entre TTL y CMOS.
+4. Discutir implicaciones prácticas en el diseño digital.
+
+---
+
+## Entregables
+
+El estudiante deberá entregar un **informe técnico** que incluya:
+
+- Resultados de simulación y mediciones experimentales.
+- Verificación de tablas de verdad.
+- Comparación física entre TTL y CMOS.
+- Análisis crítico de resultados.
+- Conclusiones sustentadas en datos reales.
+
+El incumplimiento del trabajo previo podrá limitar la realización completa de las mediciones.
+
+---
+
+## Referencias
+
+[1] Cornell University. *EE 2301 Experiment 3: TTL and CMOS Logic*.
+
+---
+
+## Material de apoyo
+
+-  [Modelos SPICE del 74LS04 y CD4069](./spice/).  
 * [Importar modelos en LTSpice](./spice/LTSpice.md).
 * [Vídeo sobre niveles de tensión y corriente para algunas tecnologías de electrónica digital](https://www.youtube.com/watch?v=wCQ2D2S836I).
