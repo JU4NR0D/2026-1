@@ -99,7 +99,7 @@ El estudiante deberá llegar al laboratorio con:
 - Circuitos **AND y OR** implementados con:
   - Pulsadores como entradas lógicas (Practica 1)
   - Relés de 5 V como elementos de conmutación (Practica 1)
-<div style="display: flex; justify-content: center; gap: 20px;">
+
 
   <div>
     <img src="/Labs/figs/lab01/puerta-or.webp" width="300">
@@ -111,7 +111,8 @@ El estudiante deberá llegar al laboratorio con:
     <p align="center">Figura 2. Compuerta AND</p>
   </div>
 
-</div>
+
+
 - Montajes con compuertas **AND y OR TTL** completamente funcionales. (Practica 1)
 - Circuito equivalente para la compuerta NOT CMOS preparado.(Practica 2)
 
