@@ -107,7 +107,7 @@ El estudiante deberá llegar al laboratorio con:
   </div>
 
   <div>
-    <img src="/Labs/figs/lab01/pulsadores_and.png" width="600" height="300">
+    <img src="/Labs/figs/lab01/pulsadores_and.jpg" width="600" height="300">
     <p align="center">Figura 2. Compuerta AND</p>
   </div>
 
