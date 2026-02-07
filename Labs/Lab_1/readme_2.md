@@ -81,9 +81,9 @@ Antes del laboratorio, el estudiante deberá:
 - Comparar parámetros eléctricos y realizar una tabla con los parametros:
   - $V_{IH}$, $V_{IL}$, $V_{OH}$, $V_{OL}$
   - Corrientes de entrada y salida
-  - Retardo de propagación
-- Dibujar el circuito equivalente interno de la compuerta NOT.
-- Calculos de potencia de la salida. 
+  - Retardo de propagación 
+- Calculos de potencia de la salida estatica de una compuerta not ante una señal cuadrada con un Tiempo en alto $T_{on}$ y un tiempo en bajo $T_{off}$ y voltajes $V_{OH}$ y $V_{OL}$. 
+- Calculos de potencia de la salida dinamica de una compuerta not ante una señal cuadrada con un Tiempo de subida $T_{off\_ on}$ y un tiempo en bajada $T_{on\_ off}$ y voltajes $V_{OH}$ y $V_{OL}$. 
 - Simular en SPICE:
   - Función de transferencia $V_{out}$ vs $V_{in}$
   - Respuesta ante señales de distinta frecuencia (recomendacion 5 frecuencias entre 1 khz y 1 Mhz)
@@ -99,6 +99,19 @@ El estudiante deberá llegar al laboratorio con:
 - Circuitos **AND y OR** implementados con:
   - Pulsadores como entradas lógicas (Practica 1)
   - Relés de 5 V como elementos de conmutación (Practica 1)
+<div style="display: flex; justify-content: center; gap: 20px;">
+
+  <div>
+    <img src="/Labs/figs/lab01/puerta-or.webp" width="300">
+    <p align="center">Figura 1. Compuerta OR</p>
+  </div>
+
+  <div>
+    <img src="/Labs/figs/lab01/pulsadores_and.png" width="300">
+    <p align="center">Figura 2. Compuerta AND</p>
+  </div>
+
+</div>
 - Montajes con compuertas **AND y OR TTL** completamente funcionales. (Practica 1)
 - Circuito equivalente para la compuerta NOT CMOS preparado.(Practica 2)
 
@@ -191,6 +204,6 @@ El incumplimiento del trabajo previo podrá limitar la realización completa de 
 
 ## Material de apoyo
 
-- Modelos SPICE del 74LS04 y CD4069  
-- Guía de importación de modelos en LTSpice  
-- Video: niveles lógicos y consumo en familias digitales  
+-  [Modelos SPICE del 74LS04 y CD4069](./spice/).  
+* [Importar modelos en LTSpice](./spice/LTSpice.md).
+* [Vídeo sobre niveles de tensión y corriente para algunas tecnologías de electrónica digital](https://www.youtube.com/watch?v=wCQ2D2S836I).
