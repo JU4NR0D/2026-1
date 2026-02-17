@@ -122,7 +122,7 @@ Para construir un sumador de 4 bits utilizando el sumador de 1 bit como módulo 
 
 Un sumador de 4 bits suma dos números de 4 bits (```[3:0] A``` y ```[3:0] B```) y produce una suma de 4 bits (```[3:0] So```) y un acarreo de salida (```Co```). Para lograr esto, se utilizan 4 sumadores de 1 bit, cada uno manejando una posición de la salida ```So``` (0 a 3) y el acarreo hacia la siguiente posición.  A continuación se muestra su respectivo bloque funcional:
 
-![fpga](/labs/figs/lab02/4bit.png)
+![fpga](/Labs/figs/lab02/4bit.png)
 <p align="center">
  Figura 3
 </p>
