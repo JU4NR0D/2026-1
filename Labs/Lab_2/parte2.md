@@ -217,3 +217,8 @@ Se recomienda verificar el comportamiento del diseño probando al menos las sigu
 3. Realice la respectiva simulaciones y muestre evidencias en su archivo ```README.md```.
 
 4. Implemente la descripción HDL en la tarjeta de desarrollo, empleando la ```IDE Quartus``` y muestre en el laboratorio el funcionamiento, empleando los periféricos que requiera.
+## 4. Material de apoyo
+- [Guia Primeros pasos verilog](https://www.youtube.com/watch?v=3Xm6fgKAO94)
+- [Introduccion a FPGA y verilog](https://www.youtube.com/watch?v=Bn3R0gwxk4s)
+- [Primer Proyecto Quartus](/Labs/Lab_2/proyectoQuartus.md)
+- [Primeros pasos Verilog,icarus y gtkwave (English)](https://www.youtube.com/watch?v=vN1wzM0NO4c)
