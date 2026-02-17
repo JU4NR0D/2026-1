@@ -172,6 +172,8 @@ La implementación del sumador de 4 bits utilizando instancias del sumador de 1 
 
 4. Implemente la descripción HDL en la tarjeta de desarrollo, empleando la ```IDE Quartus``` y muestre en el laboratorio el funcionamiento, empleando los periféricos que requiera.
 
-
+## 4. Material de apoyo
+- [Guia Primeros pasos verilog](https://www.youtube.com/watch?v=3Xm6fgKAO94)
+- [Introduccion a FPGA y verilog](https://www.youtube.com/watch?v=Bn3R0gwxk4s)
 
 
