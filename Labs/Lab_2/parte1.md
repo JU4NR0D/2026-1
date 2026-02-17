@@ -175,5 +175,7 @@ La implementación del sumador de 4 bits utilizando instancias del sumador de 1 
 ## 4. Material de apoyo
 - [Guia Primeros pasos verilog](https://www.youtube.com/watch?v=3Xm6fgKAO94)
 - [Introduccion a FPGA y verilog](https://www.youtube.com/watch?v=Bn3R0gwxk4s)
+- [Primer Proyecto Quartus](/Labs/Lab_2/proyectoQuartus.md)
+- [Primeros pasos Verilog,icarus y gtkwave (English)](https://www.youtube.com/watch?v=vN1wzM0NO4c)
 
 
