@@ -112,7 +112,7 @@ Para realizar la operación de resta, el circuito presenta el siguiente comporta
 
 Cuando la entrada ```Sel = 0``` la salida de las compuertas ```XOR``` es simplemente la misma entrada ```B```, por lo tanto se ejecuta la operación de suma $A+B$.
 
-## 4. Reto de diseño Control térmico de proceso en caldera industrial
+## 4. Reto de diseño: Control térmico de proceso en caldera industrial
 ---
 
 En una planta de producción química se utiliza una caldera para calentar una mezcla hasta una temperatura específica necesaria para que ocurra correctamente la reacción del proceso.
