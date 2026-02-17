@@ -59,13 +59,13 @@ A continuación se presenta la tabla de verdad del sumador completo de 1 bit.
 A partir de la tabla de verdad, mediante **mapas de Karnaugh**, se obtienen las expresiones que definen el sumador de 1 bit, las cuales son:
 
 <p align="center">
-<img src="/labs/figs/lab02/karnaugh.png" alt="alt text" width=800 >
+<img src="/Labs/figs/lab02/karnaugh.png" alt="alt text" width=800 >
 </p>
 
 A partir de las expresiones obtenidas se puede construir el siguiente circuito:
 
 <p align="center">
-<img src="/labs/figs/lab02/Circuito_sumador.png" alt="alt text" width=600 >
+<img src="/Labs/figs/lab02/Circuito_sumador.png" alt="alt text" width=600 >
 </p>
 <p align="center">
  Figura 2
